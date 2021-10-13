@@ -1,0 +1,21 @@
+{
+    "app.title": "Mi Portafolio",
+    "home.title": "¡Hola! Mi nombre es Fernando",
+    "home.text": "Soy un estudiante en Sistemas Computacionales, que gusta de aprender sobre las nuevas tecnologías web y móviles. Siempre estoy en constante aprendimiento y crecimiento.",
+    "home.quote": "Sin esfuerzo no hay aprendizaje. Sin aprendizaje, no hay crecimiento",
+    "home.aboutTitle": "Sobre este sitio",
+    "home.about": "La principal razón de este sitio es darme un espacio personal para decir quién soy, lo que hago y lo que sé. Puede ser poco o puede ser mucho, pero siempre intento ser mejor. El sitio se divide en pequeñas partes: inicio, un apartado sobre mí, luego mis habilidades y finalmente el contacto.",
+    "home.download": "Descargar CV",
+    "about.descr": "Me enamoré de la programación a la edad de quince años y desde entonces he estado aprendiendo por mi cuenta. Actualmente estudio una Ing. en Sistemas. En mi tiempo libre trabajo en mis propios proyectos de programación, así como en la escritura creativa que es otra de mis pasiones",
+    "about.location": "México, Ciudad de México",
+    "about.degree": "Estudiante en Ing. en Sistemas",
+    "about.age": "22 años",
+    "about.learning": "Desarrollador web, aprendiz de IA",
+    "about.year1": "Empecé aprendiendo los lenguajes que todos conocemos: C++, C, JAVA",
+    "about.year2": "Tras eso, me enamoré de la web apenas aprendí CSS, HTML y finalmente Vanilla JS",
+    "about.year3": "Una vez con eso, decidí ir más allá y aprender a crear sitios más robustos con PHP, MySQL y el servidor APACHE",
+    "about.year4": "En el año 2018 aprendí a utilizar JQuery, aunque aprendí que no era una librería muy buena. Y también SAAS, además de conectarme a Firebase con JS",
+    "about.year5": "Una vez que conocí el mundo de los Frameworks, cambió la perspectiva que tenía del desarrollo. Angular fue mi entrada, junto con TypeScript e Ionic",
+    "about.year6": "Después de ANGULAR, vino REACT JS y con ello el Stack MERN: MongoDB, Express, React y Node",
+    "about.year7": "Actualmente sigo aprendiendo React, y en mi tiempo libre me dedico a conocer un poco más a Python para el tema de la Inteligencia Artificial"
+}

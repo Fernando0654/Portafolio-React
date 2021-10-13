@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <title>FernandoFeN | React</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app"></div>
-</body>
+    <script>
+      window.onload = function () {
+        const options = {
+          type: "carousel",
+          perView: 1,
+          breakPoints: {
+            700: {
+              perView: 1,
+            },
+          },
+        };
+        new Glide(".glide", options).mount();
+      };
+    </script>
+  </body>
 </html>

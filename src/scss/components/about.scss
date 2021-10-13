@@ -1,0 +1,126 @@
+@use "../util/color" as color;
+@use "../util/mixins" as mix;
+@use "../util/drawings";
+
+.about {
+  @include mix.displayHorizontal;
+  width: 100%;
+  margin-top: 5vw;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.618);
+  padding: 1em;
+  gap: 1em;
+  .card-about {
+    width: 50%;
+    background-color: color.$face-book;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.829);
+    .card-me {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .header-img {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 100%;
+        border-bottom: 1px solid rgba(86, 113, 148, 0.774);
+      }
+      .header-me {
+        width: 15%;
+        height: 15%;
+        margin: auto;
+        margin-top: -2.5em;
+        border-radius: 150px;
+        border: 1px solid rgba(86, 113, 148, 0.774);
+      }
+      h1 {
+        color: color.$color_text;
+        font-family: "Poppins";
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        color: color.$color_title;
+      }
+    }
+    .general {
+      @include mix.displayHorizontal;
+      .box-general {
+        width: 50%;
+        padding: 1em;
+        p {
+          width: 90%;
+          margin: auto;
+          color: rgba(237, 232, 232, 0.898);
+          font-family: "Josefina";
+          text-align: justify;
+          font-size: 0.8rem;
+          line-height: 1.5;
+        }
+      }
+      .box-personal {
+        width: 50%;
+        padding: 1em;
+        h4 {
+          color: color.$color_data;
+          font-family: "Josefina";
+        }
+      }
+    }
+  }
+  .timeline {
+    @include mix.displayHorizontal;
+    width: 50%;
+    padding: 1em;
+    .timeline-linear {
+      @include mix.displayVertical;
+      width: 10%;
+      border-right: 0.5px solid rgb(21, 114, 190);
+      span {
+        display: block;
+        width: 100%;
+        font-family: "Poppins";
+        color: color.$color_data;
+        font-size: 0.7rem;
+        margin-top: 1em;
+      }
+      .btn-group {
+        @include mix.displayHorizontal;
+        gap: 1em;
+        button {
+          display: block;
+          padding: 1em;
+          border: none;
+          font-family: "Montserrat";
+          color: color.$color_data;
+          background-color: transparent;
+          cursor: pointer;
+          &:hover {
+            color: #2e8cdd;
+          }
+        }
+      }
+    }
+    .swipe {
+      width: 90%;
+      max-height: 40vh;
+      overflow: hidden;
+    }
+    .swipe-wrap {
+      transition: 0.5s ease;
+      .swipe-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 40vh;
+        transition: 0.5s ease;
+        p {
+          font-size: 0.8rem;
+          text-align: justify;
+          font-family: "Montserrat";
+          color: rgba(255, 255, 255, 0.864);
+        }
+      }
+    }
+  }
+}

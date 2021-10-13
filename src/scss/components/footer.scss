@@ -1,0 +1,23 @@
+@use "../util/mixins" as mix;
+
+footer {
+  @include mix.displayVertical;
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 3vw;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.618);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  p {
+    color: rgba(236, 228, 228, 0.87);
+    font-family: "Poppins";
+    margin: 0;
+    &:nth-child(1) {
+      font-size: 1rem;
+    }
+    &:nth-child(2) {
+      font-size: 0.8rem;
+    }
+  }
+}

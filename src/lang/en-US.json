@@ -1,0 +1,21 @@
+{
+    "app.title": "My Portfolio",
+    "home.title": "Hi! My name is Fernando",
+    "home.text": "I am a student in Computer Systems, who likes to learn about new web and mobile technologies. I'm always learning and growing",
+    "home.quote": "Without effort, there is no learning. Without learning, there is no growth",
+    "home.aboutTitle": "About this site",
+    "home.about": "The main reason for this site is to give me a personal space to say who I am, what I do and what I know. It can be little or it can be a lot, but I always try to be better. The site is divided in small parts: home, a section about me, then my skills and finally the contact.",
+    "home.download": "Download CV",
+    "about.descr": "I fell in love with programming at the age of fifteen and since then I have been learning on my own. I am currently studying a Systems Engineering degree. In my free time I work on my own programming projects, as well as creative writing which is another passion of mine.",
+    "about.location": "Mexico, Mexico City",
+    "about.degree": "Student in Systems Engineering",
+    "about.age": "22 years old",
+    "about.learning": "Web developer, AI trainee",
+    "about.year1": "I started learning the languages we all know: C++, C, JAVA",
+    "about.year2": "After that, I fell in love with the web as soon as I learned CSS, HTML and finally Vanilla JS",
+    "about.year3": "Once I had that, I decided to go further and learn how to create more robust sites with PHP, MySQL and the APACHE server",
+    "about.year4": "In 2018 I learned how to use JQuery, although I learned that it was not a very good library. And also SAAS, as well as connecting to Firebase with JS",
+    "about.year5": "Once I was introduced to the world of Frameworks, it changed the perspective I had on development. Angular was my ticket, along with TypeScript and Ionic",
+    "about.year6": "After ANGULAR, came REACT JS and with it the MERN Stack: MongoDB, Express, React and Node",
+    "about.year7": "Currently I'm still learning React, and in my free time I dedicate myself to learn a little more about Python for the topic of Artificial Intelligence"
+}

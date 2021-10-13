@@ -1,0 +1,75 @@
+@use "../util/mixins" as mix;
+
+.contact {
+  margin-top: 3.5vw;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.618);
+  max-width: 1000px;
+  width: 100%;
+  .contact-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #504d46;
+    font-family: "Montserrat";
+    margin-top: 3em;
+    padding-left: 1em;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    .icon-window {
+      margin: 0.2em;
+      border: 1px solid rgba(26, 24, 24, 0.589);
+      border-radius: 150px;
+      color: #504d46;
+    }
+    .close {
+      background-color: #996646 !important;
+    }
+    .icon-window {
+      background-color: #6e6b66;
+    }
+    p {
+      color: #fff;
+      font-size: 0.7rem;
+    }
+  }
+  .contact-body {
+    background-color: #300924;
+    margin: 0;
+    min-height: 50vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    .contact-descr {
+      margin: 0;
+      p {
+        color: #fff;
+        font-size: 1rem;
+        font-family: "Josefina";
+        padding: 1em;
+        margin: 0;
+      }
+    }
+    .contact-form {
+      color: #9acf5b;
+      font-family: "Josefina";
+      .input-box input[type="text"],
+      .input-box input[type="email"],
+      .input-box input[type="submit"] {
+        background-color: transparent;
+        color: #fff;
+        font-family: "Poppins";
+        border: none;
+        outline: none;
+        width: 50%;
+        text-align: left;
+        caret-color: #0074d9;
+      }
+      .input-box input[type="submit"] {
+        cursor: pointer;
+        color: #3c8ace;
+        &:hover {
+          color: #0074d9;
+        }
+      }
+    }
+  }
+}

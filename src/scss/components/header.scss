@@ -1,0 +1,86 @@
+@use "../util/color" as color;
+@use "../util/mixins" as mixin;
+
+header {
+  @include mixin.displayHorizontal;
+  margin: auto;
+  max-width: 1000px;
+  h1,
+  .socials,
+  .preferencias {
+    width: 30%;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    color: color.$color_text;
+  }
+  .socials {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    .icon {
+      padding: 0.5rem;
+      color: color.$color_icon;
+      &:hover {
+        color: #b8bfdf;
+      }
+    }
+  }
+  .preferencias {
+    @include mixin.displayHorizontal;
+    .language {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      span {
+        font-family: "Bebas Neue";
+        color: #fff;
+        padding: 0.5em;
+        border-bottom: 2px solid gray;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .brightness {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 30px;
+      cursor: pointer;
+      .circle-bright {
+        position: absolute;
+        left: 10%;
+        top: 6.5px;
+        transition: 0.2s ease;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        margin-top: 2em;
+        h1 {
+            display: none;
+        }
+        .socials {
+            width: 50%;
+            text-align: center;
+        }
+        .preferencias {
+            width: 50%;
+            .language {
+                justify-content: center;
+            }
+        }
+    }
+}
