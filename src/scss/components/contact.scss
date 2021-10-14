@@ -5,39 +5,40 @@
   border-top: 0.5px solid rgba(128, 128, 128, 0.618);
   max-width: 1000px;
   width: 100%;
-  .contact-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #504d46;
-    font-family: "Montserrat";
-    margin-top: 3em;
-    padding-left: 1em;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    .icon-window {
-      margin: 0.2em;
-      border: 1px solid rgba(26, 24, 24, 0.589);
-      border-radius: 150px;
-      color: #504d46;
+  h1 {
+    width: 100%;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    border-left: 3px solid #0074d9;
+    margin: auto;
+    margin-top: 3vw;
+    padding-left: 0.5em;
+  }
+  .message {
+    display: block;
+    width: 100%;
+    span {
+      display: none;
+      width: 50%;
+      font-family: "Josefina", sans-serif;
+      margin-left: 1em;
     }
-    .close {
-      background-color: #996646 !important;
+    .succeed {
+      color: rgb(22, 167, 22);
     }
-    .icon-window {
-      background-color: #6e6b66;
+    .error {
+      color: red;
     }
-    p {
+    .sending {
       color: #fff;
-      font-size: 0.7rem;
+      .loading-icon {
+        animation: loading 1s ease-in infinite;
+      }
     }
   }
   .contact-body {
-    background-color: #300924;
-    margin: 0;
-    min-height: 50vh;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     .contact-descr {
       margin: 0;
       p {
@@ -49,27 +50,78 @@
       }
     }
     .contact-form {
-      color: #9acf5b;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
       font-family: "Josefina";
-      .input-box input[type="text"],
-      .input-box input[type="email"],
-      .input-box input[type="submit"] {
-        background-color: transparent;
-        color: #fff;
-        font-family: "Poppins";
-        border: none;
-        outline: none;
-        width: 50%;
-        text-align: left;
-        caret-color: #0074d9;
-      }
-      .input-box input[type="submit"] {
-        cursor: pointer;
-        color: #3c8ace;
-        &:hover {
-          color: #0074d9;
+      .input-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(211, 195, 195);
+        position: relative;
+        label {
+          position: absolute;
+          left: 1.5em;
+          color: gray;
+        }
+        #lemail {
+          left: 33em;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        button {
+          background-color: rgba(12, 10, 34, 0.781);
+          color: rgb(255, 255, 255);
+          font-family: "Poppins";
+          border: none;
+          outline: none;
+          width: 100%;
+          text-align: left;
+          caret-color: #0074d9;
+          margin: 1em;
+          padding: 1em;
+          border-radius: 10px;
+          resize: none;
+          border-bottom: 2px solid transparent;
+        }
+        button {
+          cursor: pointer;
+          color: #ffffff;
+          background-color: #0074d9;
+          width: auto;
+          margin: auto;
+          &:hover {
+            color: #c7d0d8;
+          }
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+          border-bottom: 2px solid #0074d9;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+        }
+        &.subject {
+          position: relative;
+          align-items: inherit;
+          label {
+            top: 2em;
+            left: 2em;
+            position: absolute;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

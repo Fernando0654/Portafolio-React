@@ -7,8 +7,8 @@
     h1 {
       color: color.$color_text_light;
     }
-    .socials i {
-      color: color.$color_icon_light;
+    .socials .icon {
+      color: red;
       &:hover {
         color: rgb(179, 16, 16);
       }
@@ -22,7 +22,7 @@
       background-color: black;
       color: #fff;
       .circle-bright {
-          left: 60%;
+        left: 60%;
       }
     }
   }
@@ -127,19 +127,58 @@
   }
   /*contact*/
   .contact {
-    .contact-body,
-    .contact .contact-header {
-      box-shadow: 1px 1px 10px rgb(49, 47, 47);
+    h1 {
+      color: rgb(17, 16, 16);
+      border-left: 3px solid red;
     }
-    .contact-body .contact-form .input-box input[type="submit"] {
-      color: #c73535;
-      &:hover {
-        color: #b51b1b;
+    .message {
+      .sending {
+        color: rgb(44, 39, 39);
+        .loading-icon {
+          animation: loading 1s ease-in infinite;
+        }
+      }
+    }
+    .contact-body {
+      .contact-descr {
+        p {
+          color: rgb(65, 54, 54);
+        }
+      }
+      .contact-form {
+        .input-box {
+          input[type="text"],
+          input[type="email"],
+          textarea,
+          input[type="submit"] {
+            background-color: rgba(246, 246, 250, 0.781);
+            color: rgb(33, 29, 29);
+            caret-color: #d90000;
+          }
+          input[type="submit"] {
+            color: #ffffff;
+            background-color: #d90000;
+            &:hover {
+              color: #d8c7c7;
+            }
+          }
+          input[type="text"]:focus,
+          input[type="email"]:focus {
+            border-bottom: 2px solid #d90000;
+          }
+        }
       }
     }
   }
-  /*footer*/
-  footer p {
-      color: #000;
+  footer {
+    p {
+      color: rgba(36, 31, 31, 0.87);
+      &:nth-child(1) {
+        font-size: 1rem;
+      }
+      &:nth-child(2) {
+        font-size: 0.8rem;
+      }
+    }
   }
 }

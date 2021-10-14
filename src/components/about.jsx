@@ -61,26 +61,41 @@ const about = () => {
         <div className="general">
           <div className="box-general">
             <p>
-              <FormattedMessage id="about.descr" defaultMessage="Something went wrong" />
+              <FormattedMessage
+                id="about.descr"
+                defaultMessage="Something went wrong"
+              />
             </p>
           </div>
           <div className="box-personal">
             <h4>
               <FaLocationArrow />
               &nbsp;&nbsp;
-              <FormattedMessage id="about.location" defaultMessage="Mexico, Mexico City" />
+              <FormattedMessage
+                id="about.location"
+                defaultMessage="Mexico, Mexico City"
+              />
             </h4>
             <h4>
               <FaUniversity />
-              &nbsp;&nbsp;Estudiante en Ing. en Sistemas
+              &nbsp;&nbsp;
+              <FormattedMessage
+                id="about.degree"
+                defaultMessage="Student in Systems Engineering"
+              />
             </h4>
             <h4>
               <FaUserAlt />
-              &nbsp;&nbsp;22 años
+              &nbsp;&nbsp;
+              <FormattedMessage id="about.age" defaultMessage="22 years old" />
             </h4>
             <h4>
               <FaCode />
-              &nbsp;&nbsp;Desarrollador web, aprendiz de IA
+              &nbsp;&nbsp;
+              <FormattedMessage
+                id="about.learning"
+                defaultMessage="Web developer, AI trainee"
+              />
             </h4>
           </div>
         </div>
@@ -124,7 +139,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                KALKDSAL
+                <FormattedMessage id="about.year1" />
               </p>
             </div>
             <div className="swipe-content">
@@ -144,7 +159,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                
+              <FormattedMessage id="about.year2" />
               </p>
             </div>
             <div className="swipe-content" id="2017">
@@ -164,7 +179,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                
+              <FormattedMessage id="about.year3" />
               </p>
             </div>
             <div className="swipe-content" id="2018">
@@ -184,7 +199,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                
+              <FormattedMessage id="about.year4" />
               </p>
             </div>
             <div className="swipe-content" id="2019">
@@ -204,7 +219,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                
+              <FormattedMessage id="about.year5" />
               </p>
             </div>
             <div className="swipe-content" id="2020">
@@ -224,7 +239,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-                
+              <FormattedMessage id="about.year6" />
               </p>
             </div>
             <div className="swipe-content" id="2021">
@@ -244,7 +259,7 @@ const about = () => {
                 </div>
               </div>
               <p>
-               
+              <FormattedMessage id="about.year7" />
               </p>
             </div>
           </div>
