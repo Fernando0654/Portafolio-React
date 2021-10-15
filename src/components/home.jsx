@@ -3,6 +3,17 @@ import { FormattedMessage } from "react-intl";
 import "../scss/components/home.scss";
 
 const home = () => {
+  function downloadFile() {
+    fetch("http://localhost:8080/CV.pdf").then((response) => {
+      response.blob().then((blob) => {
+        let url = window.URL.createObjectURL(blob);
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "CV.pdf";
+        a.click();
+      });
+    });
+  };
   return (
     <div className="home" id="home">
       <div className="presentation">
@@ -34,7 +45,7 @@ const home = () => {
             />
             "
           </p>
-          <button>
+          <button onClick={() => downloadFile()}>
             <FormattedMessage id="home.download" defaultMessage="Download CV" />
             <i className="fa fa-download" aria-hidden="true"></i>
           </button>
@@ -42,10 +53,16 @@ const home = () => {
       </div>
       <div className="about-short">
         <h2>
-          <FormattedMessage id="home.aboutTitle" defaultMessage="About this site" />
+          <FormattedMessage
+            id="home.aboutTitle"
+            defaultMessage="About this site"
+          />
         </h2>
         <p>
-          <FormattedMessage id="home.about" defaultMessage="Something went wrong, sorry" />
+          <FormattedMessage
+            id="home.about"
+            defaultMessage="Something went wrong, sorry"
+          />
         </p>
       </div>
     </div>

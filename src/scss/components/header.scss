@@ -65,12 +65,16 @@ header {
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     header {
         width: 100%;
-        margin-top: 2em;
+        margin-top: 5em;
+        position: relative;
         h1 {
-            display: none;
+          position: absolute;
+          width: auto;
+          margin: auto;
+          margin-top: -5em;
         }
         .socials {
             width: 50%;

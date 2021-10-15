@@ -118,3 +118,22 @@
 .glide--rtl {
   direction: rtl;
 }
+
+@media (max-width: 800px) {
+  .portfolio {
+    .glide .glide__track .glide__slides .glide__slide {
+      box-shadow: none;
+      p {
+        font-size: 0.9rem;
+      }
+      .external-links {
+        @include mix.displayVertical;
+        a {
+          width: 100%;
+          margin: 1em;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}

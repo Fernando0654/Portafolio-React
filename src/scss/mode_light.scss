@@ -166,6 +166,9 @@
           input[type="email"]:focus {
             border-bottom: 2px solid #d90000;
           }
+          button {
+            background-color: red;
+          }
         }
       }
     }

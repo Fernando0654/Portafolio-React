@@ -67,7 +67,7 @@
           color: gray;
         }
         #lemail {
-          left: 33em;
+          left: 53%;
         }
         input[type="text"],
         input[type="email"],
@@ -123,5 +123,32 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width:800px) {
+  .contact .contact-body .contact-form {
+    .input-box {
+      @include mix.displayVertical;
+      width: 100%;
+      label {
+        top: 2em;
+      }
+      #lemail {
+        left: 1.5em;
+        top: 6.7em;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 90%;
+      }
+      &.subject {
+        align-items: center;
+        label {
+          left: 1.5em;
+        }
+      }
+    }
   }
 }

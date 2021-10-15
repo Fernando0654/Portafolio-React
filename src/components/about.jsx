@@ -116,7 +116,7 @@ const about = () => {
           <span style={position == 7 ? currentItem : Item}>2021</span>
           <div className="btn-group">
             <button className="btn_next" onClick={goNext}>
-              <BsChevronDown />
+              <BsChevronDown className="icon-next" />
             </button>
           </div>
         </div>

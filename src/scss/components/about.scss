@@ -124,3 +124,47 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .about {
+    @include mix.displayVertical;
+    padding: 0;
+    .card-about {
+      width: 100%;
+      margin-top: 3em;
+      .card-me .header-me {
+        width: 20%;
+      }
+      .general {
+        @include mix.displayVertical;
+        .box-general {
+          width: 100%;
+        }
+        .box-personal {
+          width: auto;
+        }
+      }
+    }
+    .timeline {
+      @include mix.displayVertical;
+      width: 100%;
+      .timeline-linear {
+        @include mix.displayHorizontal;
+        width: 100%;
+        border-right: none !important;
+        .btn-group{
+          transform: rotate(270deg);
+        }
+      }
+      .swipe {
+        .swipe-wrap .swipe-content {
+          position: relative;
+          p {
+            position: absolute;
+            margin-top: -50%;
+          }
+        }
+      }
+    }
+  }
+}
