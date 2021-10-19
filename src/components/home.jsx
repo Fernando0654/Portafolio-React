@@ -4,7 +4,7 @@ import "../scss/components/home.scss";
 
 const home = () => {
   function downloadFile() {
-    fetch("http://localhost:8080/CV.pdf").then((response) => {
+    fetch("https://fernando0654.github.io/Portafolio-React/CV.pdf").then((response) => {
       response.blob().then((blob) => {
         let url = window.URL.createObjectURL(blob);
         let a = document.createElement("a");
