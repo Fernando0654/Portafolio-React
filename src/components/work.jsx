@@ -4,6 +4,18 @@ import "../scss/components/work.scss";
 import { BsFillFileCodeFill, BsGithub } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa";
 import { FormattedMessage } from "react-intl";
+// IMAGENES
+import w1 from "../assets/img/work/1.png";
+import w2 from "../assets/img/work/2.png";
+import w3 from "../assets/img/work/3.png";
+import w4 from "../assets/img/work/4.png";
+import w5 from "../assets/img/work/5.png";
+import w6 from "../assets/img/work/6.png";
+import w7 from "../assets/img/work/7.png";
+import w8 from "../assets/img/work/8.png";
+import w9 from "../assets/img/work/9.png";
+import w10 from "../assets/img/work/10.png";
+import w11 from "../assets/img/work/11.png";
 
 const work = () => {
   return (
@@ -13,7 +25,7 @@ const work = () => {
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
             <li className="glide__slide">
-              <img src="./assets/img/work/1.png" alt="" width="100%" />
+              <img src={w1} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -38,7 +50,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/2.png" alt="" width="100%" />
+              <img src={w2} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -66,7 +78,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/3.png" alt="" width="100%" />
+              <img src={w3} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -91,7 +103,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/4.png" alt="" width="100%" />
+              <img src={w4} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -119,7 +131,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/5.png" alt="" width="100%" />
+              <img src={w5} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -147,7 +159,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/6.png" alt="" width="100%" />
+              <img src={w6} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -175,7 +187,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/7.png" alt="" width="100%" />
+              <img src={w7} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -203,7 +215,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/8.png" alt="" width="100%" />
+              <img src={w8} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -231,7 +243,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/9.png" alt="" width="100%" />
+              <img src={w9} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -262,7 +274,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/10.png" alt="" width="100%" />
+              <img src={w10} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
@@ -293,7 +305,7 @@ const work = () => {
               </div>
             </li>
             <li className="glide__slide">
-              <img src="./assets/img/work/11.png" alt="" width="100%" />
+              <img src={w11} alt="" width="100%" />
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;

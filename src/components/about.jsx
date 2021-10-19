@@ -9,6 +9,9 @@ import {
 } from "react-icons/fa";
 import { FormattedMessage } from "react-intl";
 import "../scss/components/about.scss";
+// IMAGENES
+import imgMe from "../assets/img/img-me.png";
+import headerImg from "../assets/img/header-img.jpg";
 
 const about = () => {
   const [position, setposition] = useState(1);
@@ -47,12 +50,12 @@ const about = () => {
       <div className="card-about">
         <div className="card-me">
           <img
-            src="./assets/img/header-img.jpg"
+            src={headerImg}
             className="header-img"
             alt="header photo"
           />
           <img
-            src="./assets/img/img-me.png"
+            src={imgMe}
             className="header-me"
             alt="my photo"
           />

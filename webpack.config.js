@@ -32,7 +32,7 @@ module.exports = {
       //   use: ["style-loader", "css-loader"],
       // },
       {
-        test: /\.s[ac]ss$/i,
+        
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
@@ -41,7 +41,12 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader",
         ],
-      }
+        test: /.(css|sass|scss)$/,
+      },
+      {
+        type: "asset",
+        test: /\.(svg|jpg|png)$/
+      },
     ],
   },
   plugins: [
