@@ -20,7 +20,9 @@ import w11 from "../assets/img/work/11.png";
 const work = () => {
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Mis Proyectos</h1>
+      <h1>
+        <FormattedMessage id="work.title" defaultMessage="My work" />
+      </h1>
       <div className="glide">
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
@@ -29,18 +31,18 @@ const work = () => {
               <p>
                 <BsFillFileCodeFill />
                 &nbsp;&nbsp;
-                <FormattedMessage id="work.work1" defaultMessage="Calculator" />
+                <FormattedMessage id="work.work1" defaultMessage="Space Tourism Website" />
               </p>
               <div className="external-links">
                 <a
-                  href="https://github.com/Fernando0654/FEM_4_Calculator_App.git"
+                  href="https://github.com/Fernando0654/FEM_13_Space-tourism-website.git"
                   target="_blank"
                 >
                   Github Repo &nbsp;&nbsp;
                   <BsGithub />
                 </a>
                 <a
-                  href="https://fernando0654.github.io/FEM_4_Calculator_App/"
+                  href="https://fernando0654.github.io/FEM_13_Space-tourism-website/#/"
                   target="_blank"
                 >
                   <FormattedMessage id="work.live" defaultMessage="Live Site" />
@@ -137,19 +139,19 @@ const work = () => {
                 &nbsp;&nbsp;
                 <FormattedMessage
                   id="work.work5"
-                  defaultMessage="Stats Preview"
+                  defaultMessage="ToDo App | Firebase"
                 />
               </p>
               <div className="external-links">
                 <a
-                  href="https://github.com/Fernando0654/FEM_5_Stats-Preview.git"
+                  href="https://github.com/Fernando0654/FEM_17_TODO_FIREBASE.git"
                   target="_blank"
                 >
                   Github Repo &nbsp;&nbsp;
                   <BsGithub />
                 </a>
                 <a
-                  href="https://fernando0654.github.io/FEM_5_Stats-Preview/"
+                  href="https://fernando0654.github.io/FEM_17_TODO_FIREBASE/"
                   target="_blank"
                 >
                   <FormattedMessage id="work.live" defaultMessage="Live Site" />{" "}

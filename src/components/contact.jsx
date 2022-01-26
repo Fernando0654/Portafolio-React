@@ -9,6 +9,10 @@ import { FormattedMessage } from "react-intl";
 const contact = () => {
   function sendEmail(e) {
     e.preventDefault();
+    console.log(e.target[0].value)
+    if(e.target[0].value === "" || e.target[1].value === "" || e.target[2].value === "") {
+      return;
+    }
     document.getElementById("sending").style.display = "block";
     emailjs
       .sendForm(
